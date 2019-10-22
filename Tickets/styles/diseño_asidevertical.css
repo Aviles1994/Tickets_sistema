@@ -1,0 +1,28 @@
+.body {
+ margin: 0;
+}
+.aside_vertical{
+   margin: 0px 0px 0px; 
+  background-color: #000033;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  color: white;
+}
+
+
+.ul a{
+  color: white;
+  line-height: 2.0;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.ul a:hover{
+  background-color: #b3b3ff;
+}
+
+ul a:active{
+  background-color: #b3b3ff;
+}

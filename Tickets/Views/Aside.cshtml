@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Aside2";
+    Layout = "~/Views/_Layoutdiseño.cshtml";
+}
+
+<aside class="aside_vertical">
+    <div class="div_vertical">
+        <ul class="ul a">
+            <li><a href=""> Ticket </a></li>
+            <ul>
+                <li>@Html.ActionLink("Crear Ticket", "CrearTicket", "Crear_Ticket")</li>
+                <li>@Html.ActionLink("Buscar Ticket", "BuscarTicket", "Buscar_Ticket" )</li>
+            </ul>
+            <li><a href="#"> Agenda de Clientes </a></li>
+            <ul>
+                <li>@Html.ActionLink("Crear Cliente", "CrearCliente", "Crear_Cliente")</li>
+                <li>@Html.ActionLink("Buscar Cliente", "BuscarCliente", "Buscar_Cliente")</li>
+                <li>@Html.ActionLink("Ver Clientes", "VerClientes", "Ver_Clientes")</li>
+            </ul>
+            <li><a href="#"> Base de Conocimiento </a></li>
+            <ul>
+                <li>@Html.ActionLink("Consultar Problemas", "BuscarProblemas", "Buscar_Problemas")</li>
+            </ul>
+            <li><a href="#"> Consultas y Reportes </a></li>
+            <ul>
+                <li><a href="#"> Generar Consultas </a></li>
+                <li><a href="#"> Genrar Estadisticas </a></li>
+            </ul>
+        </ul>
+    </div>
+</aside>
