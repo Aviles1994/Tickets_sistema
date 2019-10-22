@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tickets.Models;
 
 namespace Sistema_Tickets.Controllers
 {
@@ -38,12 +39,23 @@ namespace Sistema_Tickets.Controllers
             if (dr.Read())
             {
                 var estado = (bool)dr[3];
+                var userName = (string)dr[1];
+                var userID = (int)dr[0];
 
                 if (estado == true)
                 {
+
                     dr.Close();
                     ActualizarUltimaFecha(usuario);
+
+                    Sesion.ID_Usuarios_Login = userID;
+                    Sesion.Nombre_Usuarios_Login = userName;
+                    Sesion.SesionActiva = true;
+
+                    ViewData["Nombre_Usuarios_Login"] = Sesion.Nombre_Usuarios_Login;
+
                     con.Close();
+
                     return View("../Crear_Ticket/CrearTicket");
                 }
                 return View();
@@ -70,10 +82,10 @@ namespace Sistema_Tickets.Controllers
         }
 
 
-
         private void CadenaConexion()
         {
             con.ConnectionString = @"data source=GAVILES; database=Sistema_Tickets; user id=sa; password=1234;";
         }
+
     }
 }

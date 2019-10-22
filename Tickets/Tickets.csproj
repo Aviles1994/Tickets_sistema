@@ -118,6 +118,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Crear_Cliente.cs" />
+    <Compile Include="Models\Sesion.cs" />
     <Compile Include="Models\Usuarios_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
