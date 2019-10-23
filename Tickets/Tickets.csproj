@@ -107,13 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\Buscar_ClienteController.cs" />
-    <Compile Include="Controllers\Buscar_ProblemasController.cs" />
-    <Compile Include="Controllers\Buscar_TicketController.cs" />
-    <Compile Include="Controllers\Crear_ClienteController.cs" />
-    <Compile Include="Controllers\Crear_TicketController.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\ProblemasController.cs" />
+    <Compile Include="Controllers\TicketsController.cs" />
     <Compile Include="Controllers\Usuarios_LoginController.cs" />
-    <Compile Include="Controllers\Ver_ClientesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,12 +128,12 @@
     <Content Include="Views\Usuarios_Login\Header.cshtml" />
     <Content Include="Views\header.cshtml" />
     <Content Include="Views\Aside.cshtml" />
-    <Content Include="Views\Buscar_Ticket\BuscarTicket.cshtml" />
-    <Content Include="Views\Crear_Ticket\CrearTicket.cshtml" />
-    <Content Include="Views\Crear_Cliente\CrearCliente.cshtml" />
-    <Content Include="Views\Buscar_Cliente\BuscarCliente.cshtml" />
-    <Content Include="Views\Ver_Clientes\VerClientes.cshtml" />
-    <Content Include="Views\Buscar_Problemas\BuscarProblemas.cshtml" />
+    <Content Include="Views\Tickets\BuscarTicket.cshtml" />
+    <Content Include="Views\Tickets\CrearTicket.cshtml" />
+    <Content Include="Views\Clientes\CrearCliente.cshtml" />
+    <Content Include="Views\Clientes\BuscarCliente.cshtml" />
+    <Content Include="Views\Clientes\VerClientes.cshtml" />
+    <Content Include="Views\Problemas\BuscarProblemas.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

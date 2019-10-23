@@ -24,6 +24,7 @@ namespace Sistema_Tickets.Controllers
 
         public ActionResult Verificar(Usuarios_Login usuario)
         {
+           
             CadenaConexion();
 
             con.Open();
@@ -56,7 +57,7 @@ namespace Sistema_Tickets.Controllers
 
                     con.Close();
 
-                    return View("../Crear_Ticket/CrearTicket");
+                    return View("../Tickets/CrearTicket");
                 }
                 return View();
             }
@@ -64,7 +65,7 @@ namespace Sistema_Tickets.Controllers
             {
 
                 con.Close();
-                return View("message");
+                return View();
             }
 
         }

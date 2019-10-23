@@ -7,9 +7,11 @@ using Tickets.Models;
 
 namespace Tickets.Controllers
 {
-    public class Crear_TicketController : Controller
+
+
+    public class TicketsController : Controller
     {
-        // GET: Crear_Ticket
+        // GET: Tickets
         public ActionResult Index()
         {
             return View();
@@ -18,17 +20,13 @@ namespace Tickets.Controllers
         public ActionResult CrearTicket()
         {
             ViewData["Nombre_Usuarios_Login"] = Sesion.Nombre_Usuarios_Login;
-
             return View();
         }
 
-        public ActionResult GuardarTicket()
+        public ActionResult BuscarTicket()
         {
-
+            ViewData["Nombre_Usuarios_Login"] = Sesion.Nombre_Usuarios_Login;
             return View();
         }
-
-
-
     }
 }
