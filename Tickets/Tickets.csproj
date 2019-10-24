@@ -98,11 +98,13 @@
     <Content Include="imagenes\update_status.png" />
     <Content Include="imagenes\update_user.png" />
     <Content Include="imagenes\view_more.png" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="styles\diseño_asidevertical.css" />
     <Content Include="styles\diseño_barranavegación.css" />
     <Content Include="styles\diseño_buttons.css" />
     <Content Include="styles\diseño_formularios.css" />
     <Content Include="styles\diseño_login.css" />
+    <Content Include="scripts\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -143,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

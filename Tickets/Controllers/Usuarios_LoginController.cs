@@ -37,6 +37,7 @@ namespace Sistema_Tickets.Controllers
  
 
             dr = com.ExecuteReader();
+
             if (dr.Read())
             {
                 var estado = (bool)dr[3];
@@ -56,10 +57,10 @@ namespace Sistema_Tickets.Controllers
                     ViewData["Nombre_Usuarios_Login"] = Sesion.Nombre_Usuarios_Login;
 
                     con.Close();
-
                     return View("../Tickets/CrearTicket");
                 }
                 return View();
+                
             }
             else
             {
@@ -85,7 +86,8 @@ namespace Sistema_Tickets.Controllers
 
         private void CadenaConexion()
         {
-            con.ConnectionString = @"data source=GAVILES; database=Sistema_Tickets; user id=sa; password=1234;";
+            //con.ConnectionString = @"data source=GAVILES; database=Sistema_Tickets; user id=sa; password=1234;";
+            con.ConnectionString = @"data source=OVELAZQUEZ; database=Sistema_Tickets; user id=sa; password=randiortonRKO97;";
         }
 
     }

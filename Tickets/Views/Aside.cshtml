@@ -8,27 +8,36 @@
 
 <aside class="aside_vertical">
     <div class="div_vertical">
-        <ul class="ul a">
-            <li><a href=""> Ticket </a></li>
-            <ul>
-                <li>@Html.ActionLink("Crear Ticket", "CrearTicket", "Tickets")</li>
-                <li>@Html.ActionLink("Buscar Ticket", "BuscarTicket", "Tickets" )</li>
-            </ul>
-            <li><a href="#"> Agenda de Clientes </a></li>
-            <ul>
-                <li>@Html.ActionLink("Crear Cliente", "CrearCliente", "Clientes")</li>
-                <li>@Html.ActionLink("Buscar Cliente", "BuscarCliente", "Clientes")</li>
-                <li>@Html.ActionLink("Ver Clientes", "VerClientes", "Clientes")</li>
-            </ul>
-            <li><a href="#"> Base de Conocimiento </a></li>
-            <ul>
-                <li>@Html.ActionLink("Consultar Problemas", "BuscarProblemas", "Problemas")</li>
-            </ul>
-            <li><a href="#"> Consultas y Reportes </a></li>
-            <ul>
-                <li><a href="#"> Generar Consultas </a></li>
-                <li><a href="#"> Genrar Estadisticas </a></li>
-            </ul>
+        <ul class="ul a sidebar-menu" data-widget="tree">
+            <li class="treeview">
+                <a href=""> Ticket </a>
+
+                <ul class="treeview-menu">
+                    <li>@Html.ActionLink("Crear Ticket", "CrearTicket", "Tickets")</li>
+                    <li>@Html.ActionLink("Buscar Ticket", "BuscarTicket", "Tickets")</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> Agenda de Clientes </a>
+                <ul class="treeview-menu">
+                    <li>@Html.ActionLink("Crear Cliente", "CrearCliente", "Clientes")</li>
+                    <li>@Html.ActionLink("Buscar Cliente", "BuscarCliente", "Clientes")</li>
+                    <li>@Html.ActionLink("Ver Clientes", "VerClientes", "Clientes")</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> Base de Conocimiento </a>
+                <ul class="treeview-menu">
+                    <li>@Html.ActionLink("Consultar Problemas", "BuscarProblemas", "Problemas")</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> Consultas y Reportes </a>
+                <ul class="treeview-menu">
+                    <li><a href="#"> Generar Consultas </a></li>
+                    <li><a href="#"> Generar Estadisticas </a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </aside>
