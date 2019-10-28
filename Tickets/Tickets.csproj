@@ -117,6 +117,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Crear_Cliente.cs" />
+    <Compile Include="Models\Entidad_Federativa.cs" />
     <Compile Include="Models\Sesion.cs" />
     <Compile Include="Models\Usuarios_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,17 +126,18 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\_Layoutdiseño.cshtml" />
-    <Content Include="Views\Usuarios_Login\Login.cshtml" />
-    <Content Include="Views\Usuarios_Login\Aside.cshtml" />
+    <Content Include="Views\Usuarios_Login\aside.cshtml" />
     <Content Include="Views\Usuarios_Login\Header.cshtml" />
-    <Content Include="Views\header.cshtml" />
-    <Content Include="Views\Aside.cshtml" />
     <Content Include="Views\Tickets\BuscarTicket.cshtml" />
     <Content Include="Views\Tickets\CrearTicket.cshtml" />
     <Content Include="Views\Clientes\CrearCliente.cshtml" />
     <Content Include="Views\Clientes\BuscarCliente.cshtml" />
     <Content Include="Views\Clientes\VerClientes.cshtml" />
     <Content Include="Views\Problemas\BuscarProblemas.cshtml" />
+    <Content Include="Views\Usuarios_Login\Error.cshtml" />
+    <Content Include="Views\Usuarios_Login\Login.cshtml" />
+    <Content Include="Views\Aside.cshtml" />
+    <Content Include="Views\header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

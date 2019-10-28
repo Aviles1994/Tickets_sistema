@@ -59,14 +59,16 @@ namespace Sistema_Tickets.Controllers
                     con.Close();
                     return View("../Tickets/CrearTicket");
                 }
-                return View();
-                
+                else
+                {
+                    return View("Error");
+                }
             }
             else
             {
 
                 con.Close();
-                return View();
+                return View("Error");
             }
 
         }
@@ -86,8 +88,8 @@ namespace Sistema_Tickets.Controllers
 
         private void CadenaConexion()
         {
-            //con.ConnectionString = @"data source=GAVILES; database=Sistema_Tickets; user id=sa; password=1234;";
-            con.ConnectionString = @"data source=OVELAZQUEZ; database=Sistema_Tickets; user id=sa; password=randiortonRKO97;";
+            con.ConnectionString = @"data source=GAVILES; database=Sistema_Tickets; user id=sa; password=1234;";
+            //con.ConnectionString = @"data source=OVELAZQUEZ; database=Sistema_Tickets; user id=sa; password=randiortonRKO97;";
         }
 
     }
